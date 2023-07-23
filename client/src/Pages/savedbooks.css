@@ -1,0 +1,333 @@
+.saved-books-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100 vw;
+}
+
+.saved-book-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 850px) {
+  .saved-books-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #savedbookscardcont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.saved-book-card:hover {
+  transform: translateY(-5px);
+}
+
+.bookImg {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sbookImg {
+  max-width: 150px;
+}
+
+#isbookImg {
+  width: 150px;
+}
+
+.saved-book-content {
+  display: flex;
+  width: 100%;
+}
+
+.saved-book-image {
+  width: 100%;
+  max-height: 100vh;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.saved-book-details {
+  flex-grow: 1;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.saved-book-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.saved-book-description {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.saved-book-author {
+  font-size: 14px;
+  color: #888;
+}
+
+.saved-book-progress {
+  font-size: 14px;
+}
+
+.saved-book-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 10px;
+}
+
+.saved-book-button {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.saved-book-button:hover {
+  background-color: #45a049;
+}
+
+.saved-book-button:active {
+  background-color: #3e8e41;
+}
+
+.saved-book-button.active {
+  background-color: #3e8e41;
+}
+
+.comment-section {
+  margin-top: 20px;
+  border-radius: 56px;
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 10px #d3d3d3, inset -5px -5px 10px #ededed;
+}
+
+.comment {
+  margin-bottom: 10px;
+}
+
+.comment-text {
+  font-size: 14px;
+}
+
+.comment-user {
+  font-size: 12px;
+  color: #888;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.author-label {
+  font-weight: bold;
+}
+
+.comment-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-delete-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border-style: none;
+  box-shadow: 10px 10px 10px 1px rgba(10, 99, 169, 0.16),
+    -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+  background: #ebeef1;
+  margin: 10px;
+}
+
+.comment-text {
+  border-radius: 20px;
+  border-style: none;
+  box-shadow: 10px 10px 10px 1px rgba(10, 99, 169, 0.16),
+    -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+  background: #ebeef1;
+  margin: 10px;
+  padding: 7px 20px;
+}
+
+.comment-form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  color: #555;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 30px;
+  border-radius: 100px 0px 0px 100px;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+
+.inputBtn {
+  display: flex;
+}
+
+.comBtn {
+  box-shadow: 10px 10px 10px 1px rgba(10, 99, 169, 0.16),
+    -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+  background: rgb(37, 164, 255);
+  margin: 30px 0px;
+  border-radius: 0px 100px 100px 0px;
+  padding: 10px 10px 10px 10px;
+  border: none;
+  transition: background-color 0.3s;
+  margin-top: -1px;
+  color: antiquewhite;
+}
+
+.comBtn:hover {
+  background-color: rgb(8, 135, 226);
+  cursor: pointer;
+  color: white;
+}
+
+.pgdlup {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pgdlup > * {
+  border: none;
+  outline: none;
+  background: linear-gradient(145deg, #cef7ff, #d1d1d1);
+  font-size: 18px;
+  padding: 10px 10px 10px 10px;
+  color: black;
+  margin-bottom: 30px;
+  border-radius: 59px;
+  background: #ffffff;
+  box-shadow: 5px -5px 10px #8b8b8b, -5px 5px 10px #ffffff;
+}
+
+.pgdlup > *:hover {
+  color: skyblue;
+}
+
+.comUser {
+  color: rgb(169, 82, 1);
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.usDt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comDate {
+  font-size: 10px;
+  font-weight: bold;
+  color: #888888c8;
+  padding: 0px 20px 0px 0px;
+}
+
+.savedBk {
+  width: 60%;
+}
+
+.fnBooks {
+  flex-wrap: wrap;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.fnBooks h1 {
+  max-width: 100%;
+}
+
+.finished-book-card {
+  max-width: 100%;
+  border-radius: 59px;
+  background: #ffffff;
+  box-shadow: 5px -5px 10px #8b8b8b, -5px 5px 10px #ffffff;
+}
+
+.finished-book-title {
+  display: flex;
+  padding: 10px;
+  max-width: 100px;
+  margin: 10px;
+}
+
+.finished-book-content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+
+.finished-book-delete-button {
+  padding: 10px;
+  margin: 10px;
+}
+
+.bookImg button {
+  border-style: none;
+  border-radius: 50px;
+  background: linear-gradient(225deg, #ffffff, #ffffff);
+  box-shadow: -5px 5px 10px #bebebe, 5px -5px 10px #ffffff;
+}
+
+.bookImg button:hover {
+  color: brown;
+}
